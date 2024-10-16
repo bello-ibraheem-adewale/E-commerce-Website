@@ -126,7 +126,7 @@ const Home = () => {
 
       <div className="bg-slate-400 h-auto w-full gap-5 grid grid-cols-1 tablet:grid-cols-3 laptop:grid-cols-4">
         {filteredData.map((item) => (
-          <div key={item.id} className="bg-white shadow-lg w-72 h-[70vh] justify-center ml-20 tablet:ml-0 laptop:ml-0 rounded-md text-center text-amber-950 flex flex-col">
+          <div key={item.id} className="bg-white shadow-lg w-72 h-[70vh] justify-center ml-10 tablet:ml-0 laptop:ml-0 rounded-md text-center text-amber-950 flex flex-col">
             <img className="w-60 h-60 rounded pl-6 pt-4" src={item.image} alt='' />
             <p onClick={handleToggle} style={{ cursor: 'pointer' }}>
               {isExpanded ? item.title : item.title.length > 30 ? item.title.slice(0, 30) + '...' : item.title}
