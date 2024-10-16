@@ -110,7 +110,7 @@ const Home = () => {
         </div>
         <div className="flex flex-row align-middle">
           <button className="bg-white hidden tablet:flex laptop:flex w-48 h-6 rounded mt-2 active:bg-gray-300">ADD TO CART</button>
-          <h1 className="bg-green-400 flex tablet:flex laptop:hidden"> &#9776; </h1>
+          <h1 className="flex justify-end tablet:flex laptop:hidden"> &#9776; </h1>
         </div>
       </nav>
 
@@ -124,9 +124,9 @@ const Home = () => {
         <img className="w-[76vw] h-72 bg-current bg-contain animate-pulse" src={Desktop1} alt="" />
       </div>
 
-      <div className="bg-slate-400 h-auto w-full gap-5 grid grid-cols-1 tablet:grid-cols-3 laptop:grid-cols-4 mt-5">
+      <div className="bg-slate-400 h-auto w-full gap-5 grid grid-cols-1 tablet:grid-cols-3 laptop:grid-cols-4">
         {filteredData.map((item) => (
-          <div key={item.id} className="bg-white shadow-lg w-72 h-[70vh] justify-center rounded-md text-center text-amber-950 flex flex-col">
+          <div key={item.id} className="bg-white shadow-lg w-72 h-[70vh] justify-center ml-20 tablet:ml-0 laptop:ml-0 rounded-md text-center text-amber-950 flex flex-col">
             <img className="w-60 h-60 rounded pl-6 pt-4" src={item.image} alt='' />
             <p onClick={handleToggle} style={{ cursor: 'pointer' }}>
               {isExpanded ? item.title : item.title.length > 30 ? item.title.slice(0, 30) + '...' : item.title}
