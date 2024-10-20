@@ -132,7 +132,7 @@ const Home = () => {
               {isExpanded ? item.title : item.title.length > 30 ? item.title.slice(0, 30) + '...' : item.title}
             </p>
             <div className='flex flex-row justify-between align-middle items-center gap-4 p-5'>
-              <button className='bg-slate-900 rounded text-sm w-48 h-8 hover:bg-gray-400 hover:text-red-700 text-white'>price:#{item.price}</button>
+              <button className='bg-slate-900 rounded text-sm w-48 h-8 hover:bg-gray-400 hover:text-red-700 text-white'>price:${item.price}</button>
               <button className='bg-slate-900 rounded text-sm w-48 h-8 hover:bg-gray-400 hover:text-red-700 text-white'>rate:{item.rating.rate}</button>
               <button className='bg-slate-900 rounded text-sm w-48 h-8 hover:bg-gray-400 hover:text-red-700 text-white'>count:{item.rating.count}</button>
             </div>
